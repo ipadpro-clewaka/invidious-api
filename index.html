@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>新型 turbotube </title>
+<link rel="stylesheet" href="css/modalVideo/modal-video.min.css">
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery-modal-video.min.js"></script>
+<script>
+    $(function(){
+        $(".js-modal-btn").modalVideo();
+    });
+</script>
 </head>
 <body>
-  <button class="js-modal-video" data-video-url="https://developer.a-blogcms.jp/themes/developer/movies/280.mp4">Open Video</button>
-  <link href="https://unpkg.com/modal-video@latest/css/modal-video.min.css" rel="stylesheet">
-<script src="https://unpkg.com/modal-video@latest/js/modal-video.min.js"></script>
-<script>
-  window.addEventListener('DOMContentLoaded', function () {
-    new modalVideo('.js-modal-video');
-  });
-</script>
+<!-- /Main -->
+<main>
+    <section>
+        <p><button class="js-modal-btn" data-video-url="https://developer.a-blogcms.jp/themes/developer/movies/280.mp4">動画をみる</button></p>
+    </section>
+</main>
+<!-- /Main -->
 </body>
 </html>
